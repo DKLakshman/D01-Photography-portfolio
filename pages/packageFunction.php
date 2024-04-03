@@ -65,7 +65,7 @@
         
         $id = $_POST["submit"];
         
-        $query = "DELETE FROM packages WHERE id = $id";
+        $query = "DELETE FROM package WHERE id = $id";
         mysqli_query($conn,$query);
 
         echo "
