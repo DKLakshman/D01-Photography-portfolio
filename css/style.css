@@ -1,0 +1,62 @@
+/* header css */
+.nav-logout-button{
+    width: 100px;
+    height: 40px;
+}
+/* Home css */
+/* section 1 */
+.home-sec1-left{
+    width: 500px;
+    height: 420px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    /* flex-grow: 1; */
+}
+.home-sec1-right{
+    width: 500px;
+    /* height: 480px; */
+    /* flex-grow: 2; */
+}
+.sec1-image{
+    width: 200px;
+    height: 200px;
+}
+/* section 2 */
+.home-sec2-card{
+    width: 450px;
+    height: 300px;
+}
+.home-sec2-image{
+    width: 380px;
+}
+.home-sec2-card-button{
+    width: 120px;
+    height: 35px;
+    box-shadow: var(--box-shadow);
+}
+.home-sec2-card-button:active {
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+    transform: translateY(4px);
+}
+.home-sec2-card-button:hover {
+    background-color: rgb(243, 252, 243);
+}
+/* section 3 */
+.home-sec3-left{
+    width: 350px;
+    height: 350px;
+}
+.home-sec3-right{
+    width: 550px;
+    height: 350px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.home-sec3-img{
+    width: 200px;
+}
+/* FOOTER SECTION */
+.footer{
+    height: 100px;
+}
