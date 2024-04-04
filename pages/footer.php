@@ -15,17 +15,17 @@
 </head>
 
 <body>
-    <section class="footer alg-bg-lighter-green d-flex justify-content-between align-items-center">
+    <section class="footer alg-bg-green d-flex justify-content-between align-items-center">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class="alg-text-p">
+            <div class="alg-text-p alg-text-light">
                 <h5>Conatct Us</h5>
                 <div class="">0094 72 8571 968</div>
                 <div>focusframe@sltnet.lk</div>
             </div>
-            <div class="alg-text-p">
+            <div class="alg-text-p alg-text-light">
                 <div>Copyright © 2024 · Focus Frame</div>
             </div>
-            <div class="d-flex">
+            <div class="d-flex alg-text-light">
                 <div style="width: 40px; font-size:25px;"><i  class="bi bi-facebook"></i></div>
                 <div style="width: 40px; font-size:25px;"><i  class="bi bi-instagram"></i></div>
                 <div style="width: 40px; font-size:25px;"><i  class="bi bi-whatsapp"></i></div>

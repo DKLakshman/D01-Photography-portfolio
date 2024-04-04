@@ -3,6 +3,12 @@
     width: 100px;
     height: 40px;
 }
+.header-list:hover{
+    color: var(--light-green);
+}
+.header-list:active{
+    color: white;
+}
 /* Home css */
 /* section 1 */
 .home-sec1-left{
@@ -59,4 +65,170 @@
 /* FOOTER SECTION */
 .footer{
     height: 100px;
+}
+
+/* viewPhotos page css */
+.viewPhotos-table{
+    width: 100%;
+    height: 50px;
+    border-collapse:separate;
+    border-spacing:0 15px;
+}
+.viewPhotos-table-headings{
+    height: 40px;
+}
+.viewPhotos-add-button:hover{
+    background-color: var(--green);
+}
+.viewPhotos-add-button:active {
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+/* viewPackages page css */
+.viewPackages-table{
+    width: 100%;
+    height: 50px;
+    border-collapse:separate;
+    border-spacing:0 15px;
+}
+.viewPackages-table-headings{
+    height: 40px;
+}
+.viewPackages-add-button:hover{
+    background-color: var(--green);
+}
+.viewPackages-add-button:active {
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+/* addPhotos page css */
+.addPhotos-form{
+    width: 700px;
+    height: 700px;
+}
+/* all input fields custom */
+.input-field{
+    background-color: var(--lighter-green);
+    margin-left: 100px;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: var(--box-shadow);
+}
+.input-textarea{
+    background-color: var(--lighter-green);
+    width: 500px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: var(--box-shadow);
+}
+.input-labels{
+    margin-left: 100px;
+    
+}
+.addPhotos-btn{
+    width: 150px;
+    height: 40px;
+
+}
+/* addPackage page css */
+.addPackage-form{
+    width: 700px;
+    height: 630px;
+}
+/* Loign page */
+.login-left{
+    width: 600px;
+    height: 485px;
+}
+.login-right{
+    width: 200px;
+    /* height: 600px; */
+}
+.login-input{
+    background-color: var(--green);
+    border-color: white;
+    width: 400px;
+    height: 30px;
+}
+.login-input[type="email"]{
+    color: white; /* Change this color to the desired text color */
+}
+.login-input[type="password"]{
+    color: white; /* Change this color to the desired text color */
+}
+.login-btn{
+    color: white;
+    width: 130px;
+    height: 35px;
+    background-color: var(--green);
+    border-color: white;
+    box-shadow: var(--box-shadow);
+}
+.login-link:hover{
+    color: var(--light-green);
+}
+
+/* register page */
+.reg-left{
+    width: 450px;
+    height: 600px;
+}
+.reg-right{
+    width: 600px;
+    height: 600px;
+}
+.reg-image{
+    width: 450px;
+    height: 600px;
+}
+.reg-input{
+    background-color: var(--green);
+    border-color: white;
+}
+.reg-input[type="text"]{
+    color: white;
+}
+.reg-input[type="password"]{
+    color: white;
+}
+.reg-input[type="number"]{
+    color: white;
+}
+.reg-input[type="email"]{
+    color: white;
+}
+
+/* about us page css*/
+.abt-sec1{
+    width: 100%;
+    height: 600px;
+    background-image: url('../resources/abt/abt1.png');
+    background-size: cover;
+
+}
+.abt-sec1-para{
+    width: 500px;
+    height: 500px;
+    padding-top: 180px;
+    text-align: justify;
+}
+/* contactUs page css */
+.con-sec1-left{
+    width: 500px;
+    height: 500px;
+}
+.con-sec1-image{
+    width: 400px;
+    
+}
+.con-sec1-right{
+    width: 500px;
+    height: 500px;
 }

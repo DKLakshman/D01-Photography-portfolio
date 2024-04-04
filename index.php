@@ -68,24 +68,7 @@
             </div>
         </div>
     </section>
-    <!-- Home page section 03 -->
-    <section class="home-sec3 pt-5 pb-3">
-        <div class="container">
-            <div class="alg-text-h2 alg-bold alg-text-dark text-center pb-4">About Us</div>
-            <div class="d-flex justify-content-center  gap-4">
-                <div class="home-sec3-left d-flex pt-4 alg-rounded-mid flex-column align-items-center alg-bg-lighter-green ">
-                    <div><img class="home-sec3-img" src="resources/home/profile.png" alt=""></div>
-                    <div class="pt-2">Sapumali Weerawardhana</div>
-                    <div>No 234, Borella Road, Kaduwela.</div>
-                    <div>0094 72 8571 968</div>
-                </div>
-                <div class="home-sec3-right  pt-4">
-                    I am passionate about freezing time through the lens of my camera. With an eye for detail and a heart for storytelling, I specialize in crafting captivating images that encapsulate the essence of every subject. From the delicate nuances of nature to the raw emotions of human connection, my photography seeks to evoke emotion, ignite imagination, and immortalize fleeting beauty. Let me accompany you on your journey, transforming moments into memories that last a lifetime.
-                </div>
-            </div>
-
-        </div>
-    </section>
+   
 
     <?php include 'pages/footer.php'?>
 

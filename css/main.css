@@ -7,9 +7,16 @@
 
 :root {
   /* color */
-  --dark-green: #013237;
+  /* --dark-green: #013237;
   --green: #4CA771;
   --light-green: #C0E6BA;
+  --lighter-green: #EAF9E7;
+  --light: rgba(255,255,255,1); */
+  
+  
+  --dark-green: #013237;
+  --green: #01392D;
+  --light-green: #346A55;
   --lighter-green: #EAF9E7;
   --light: rgba(255,255,255,1);
 
@@ -23,7 +30,7 @@
   --font-h1-md: 40px;
   --font-h1: 30px;
 
-  --font-h-medium-lg: 30px;
+  --font-h-medium-lg: 32px;
   --font-h-medium-md: 28px;
   --font-h-medium: 22px;
 
@@ -56,7 +63,7 @@
   /* outline */
 
   /* shadows */
-  --box-shadow: 0px 3px 5px 3px rgba(213, 211, 211, 0.8);
+  --box-shadow: 0px 2px 3px 1px rgba(213, 211, 211, 0.8);
 }
 
 

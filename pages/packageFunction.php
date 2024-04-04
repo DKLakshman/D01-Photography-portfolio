@@ -19,12 +19,20 @@
     function add(){
         global $conn;
 
+        $filename = $_FILES["file"]["name"];
+        $tmpName = $_FILES["file"]["tmp_name"];
+
         $name = $_POST["name"];
+        $imgCount = $_POST["imgCount"];
+        $hours = $_POST["hours"];
         $type = $_POST["type"];
-        $description = $_POST["description"];
         $price = $_POST["price"];
 
-        $query ="INSERT INTO packages VALUES('','$name','$type','$description','$price')";
+        $newfilename = uniqid()."-".$filename;
+
+        move_uploaded_file($tmpName,'../uploads/'.$newfilename);
+
+        $query ="INSERT INTO packages VALUES('','$newfilename','$name','$imgCount','$hours','$type','$price')";
         mysqli_query($conn,$query);
         
         echo "<script> alert('added successfully'); document.location.href = 'viewPackage.php'; </script>";
@@ -33,7 +41,6 @@
         global $conn;
         
         $id = $_GET["id"];
-        $title = $_POST["title"];
         
         if ($_FILES["file"]["error"] != 4) {
             $filename = $_FILES["file"]["name"];
@@ -42,19 +49,22 @@
             $newfilename = uniqid()."-".$filename;
             
             move_uploaded_file($tmpName,'../uploads/'.$newfilename);
-            $query = "UPDATE photos SET image = '$newfilename' WHERE id = $id";
+            $query = "UPDATE packages SET image = '$newfilename' WHERE id = $id";
             mysqli_query($conn,$query);
             
         }
-
-        $description = $_POST["description"];
-        $type = $_POST["type"];
         
-        $query = "UPDATE photos SET `title` = '$title', description = '$description', type = '$type' WHERE id = $id";
+        $name = $_POST["name"];
+        $imgCount = $_POST["imgCount"];
+        $hours = $_POST["hours"];
+        $type = $_POST["type"];
+        $price = $_POST["price"];
+        
+        $query = "UPDATE packages SET package_name = '$name', img_count = '$imgCount',`hours` = '$hours', package_type = '$type',price='$price' WHERE id = $id";
         mysqli_query($conn,$query);
         
         echo "
-        <script>alert('user edit successfully');document.location.href = 'ViewPhotos.php'; </script>
+        <script>alert('bookig updated successfully');document.location.href = 'viewPackage.php'; </script>
         ";
         
     }
@@ -65,7 +75,7 @@
         
         $id = $_POST["submit"];
         
-        $query = "DELETE FROM package WHERE id = $id";
+        $query = "DELETE FROM packages WHERE id = $id";
         mysqli_query($conn,$query);
 
         echo "
