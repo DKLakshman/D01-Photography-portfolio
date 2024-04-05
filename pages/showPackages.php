@@ -110,7 +110,7 @@
                 ?>
                     <div class="col-md-4">
                         <div class="card mb-3">
-                            <img src="../uploads/<?php echo $package["image"]; ?>" style="" alt="Package Image">
+                            <img src="../uploads/<?php echo $package["image"]; ?>" alt="Package Image" style="height:400px;">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $package["package_name"]; ?></h5>
                                 <p class="card-text">Image Count: <?php echo $package["img_count"]; ?></p>

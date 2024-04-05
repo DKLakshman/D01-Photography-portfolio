@@ -33,7 +33,7 @@
             ?>
                 <div class="col-md-4">
                     <div class="card mb-3">
-                        <img class="" src="../uploads/<?php echo $user["image"]; ?>" style="" alt="photos Image">
+                        <img class="" src="../uploads/<?php echo $user["image"]; ?>" alt="photos Image" style="height:400px;">
                         <div class="card-body d-flex flex-column align-items-center">
                             <h5 class="card-title alg-text-h2"><?php echo $user["title"]; ?></h5>
                             <p class="card-text "><?php echo $user["description"]; ?></p>
