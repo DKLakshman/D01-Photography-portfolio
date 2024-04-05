@@ -16,11 +16,48 @@
 
 <body>
     <?php require 'header.php'?>
+
+
+    <section class="home-hero pb-5">
+        <div class="home-hero-container container d-flex justify-content-center ">
+            <div class="home-hero-box d-flex flex-column align-items-center">
+                <h1 class="alg-text-light alg-bolder">Malcolm Lismore Photography</h1>
+                <div class="home-hero-para alg-text-light p-3">Discover captivating moments frozen in time.
+ Let our images speak volumes as we capture the essence of life in every frame.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-paraSec pt-5 pb-5">
+        <div class="container d-flex justify-content-center">
+            <div class="home-paraSec-text">
+            Welcome to Malcolm Lismore Photography, your gateway to a world of captivating imagery and storytelling through photography. Explore our curated collection of stunning photographs, each frame a narrative waiting to be discovered. From breathtaking landscapes to intimate portraits, our passion for visual storytelling knows no bounds. Join us on this journey of exploration, inspiration, and visual delight. Start your adventure with Malcolm Lismore Photography today.
+            </div>
+        </div>
+    </section>
+
+    <section class="pack-sec2 pb-5 pt-4">
+        <div class="container d-flex justify-content-center gap-4">
+            <div class="home-sec3-card1 d-flex justify-content-center" style="height: 400px;">
+                <div><button class="pack-se2-btn" style="margin-top: 340px;">wild Life</button></div>
+            </div>
+            <div class="home-sec3-card2 d-flex justify-content-center" style="height: 400px;">
+                <div><button class="pack-se2-btn" style="margin-top: 340px;">Weddings</button></div>
+            </div>
+            <div class="home-sec3-card3 d-flex justify-content-center" style="height: 400px;">
+                <div><button class="pack-se2-btn" style="margin-top: 340px;">Pre Shoots</button></div>
+            </div>
+            <div class="home-sec3-card4 d-flex justify-content-center" style="height: 400px;">
+                <div><button class="pack-se2-btn" style="margin-top: 340px;">Events</button></div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Home page section 01 -->
-    <section class="home-sec1 pt-3">
-        <div class="container">
-            <div class="d-flex justify-content-center gap-5">
-                <div class="home-sec1-left alg-bg-light-green alg-text-h3 p-4">Welcome to Focus Frame, your gateway to a world of captivating imagery and storytelling through photography. Explore our curated collection of stunning photographs, each frame a narrative waiting to be discovered. From breathtaking landscapes to intimate portraits, our passion for visual storytelling knows no bounds. Join us on this journey of exploration, inspiration, and visual delight. Start your adventure with FocusFrame today.</div>
+    <section class="home-sec1 pt-3 pb-5">
+        <div class="container d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
                 <div class="home-sec1-right d-flex  gap-3">
                     <div class="d-flex flex-column gap-3">
                         <img class="sec1-image" src="../resources/home/image1.png" alt="">
@@ -34,42 +71,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Home page section 02 -->
-    <section class="home-sec2 pt-5 ">
-        <div class="container text-center">
-            <div class="alg-text-h2 alg-bold alg-text-dark pb-4">CATEGORIES</div>
-            <div class="d-flex gap-5 justify-content-center">
-                <div class="d-flex flex-column gap-5">
-                    <!-- 1st card -->
-                    <div class="home-sec2-card alg-bg-light-green alg-rounded-mid d-flex flex-column justify-content-center align-items-center gap-3">
-                        <div class="alg-text-h3 alg-bold">Wild Life</div>
-                        <div><img class="home-sec2-image" src="../resources/home/card1.png" alt=""></div>
-                        <div><button class="home-sec2-card-button alg-bg-lighter-green border-0 alg-rounded-mid">Book Now</button></div>
-                    </div>
-                    <!-- 1st card -->
-                    <div class="home-sec2-card alg-bg-light-green alg-rounded-mid d-flex flex-column justify-content-center align-items-center gap-3">
-                        <div class="alg-text-h3 alg-bold">Weddings</div>
-                        <div><img class="home-sec2-image" src="../resources/home/card2.png" alt=""></div>
-                        <div><button class="home-sec2-card-button alg-bg-lighter-green border-0 alg-rounded-mid">Book Now</button></div>
-                    </div>
-                </div>
-                <div class="d-flex flex-column gap-5">
-                    <div class="home-sec2-card alg-bg-light-green alg-rounded-mid d-flex flex-column justify-content-center align-items-center gap-3">
-                        <div class="alg-text-h3 alg-bold">Pre Shoots</div>
-                        <div><img class="home-sec2-image" src="../resources/home/card3.png" alt=""></div>
-                        <div><button class="home-sec2-card-button alg-bg-lighter-green border-0 alg-rounded-mid">Book Now</button></div>
-                    </div>
-                    <div class="home-sec2-card alg-bg-light-green alg-rounded-mid d-flex flex-column justify-content-center align-items-center gap-3">
-                        <div class="alg-text-h3 alg-bold">Events</div>
-                        <div><img class="home-sec2-image" src="../resources/home/card4.png" alt=""></div>
-                        <div><button class="home-sec2-card-button alg-bg-lighter-green border-0 alg-rounded-mid">Book Now</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
 
     <?php include 'footer.php'?>
 

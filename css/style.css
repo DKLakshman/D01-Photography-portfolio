@@ -10,43 +10,71 @@
     color: white;
 }
 /* Home css */
-/* section 1 */
-.home-sec1-left{
-    width: 500px;
-    height: 420px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    /* flex-grow: 1; */
+/*hero section */
+.home-hero{
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-image: url('../resources/home/home-hero.png');
+    /* transform: translateY(20px); */
+
 }
+.home-hero-container{
+    padding-top: 100px;
+}
+.home-hero-box{
+    width: 800px;
+    height: 150px;
+    background-color: var(--green);
+    opacity: 0.6;
+}
+.home-hero-para{
+    text-align: center;
+}
+
+/* paraSec */
+.home-paraSec-text{
+    width: 700px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+
+/* section 3 */
+.home-sec3-card1{
+    width: 200px;
+    height: 400px;
+    background-image: url('../resources/home/h-s3-1.png');
+    background-size: cover;
+}
+.home-sec3-card2{
+    width: 200px;
+    height: 400px;
+    background-image: url('../resources/home/h-s3-2.png');
+    background-size: cover;
+}
+.home-sec3-card3{
+    width: 200px;
+    height: 400px;
+    background-image: url('../resources/home/h-s3-3.png');
+    background-size: cover;
+}
+.home-sec3-card4{
+    width: 200px;
+    height: 400px;
+    background-image: url('../resources/home/h-s3-4.png');
+    background-size: cover;
+}
+
+/* section 1 */
 .home-sec1-right{
-    width: 500px;
+    width: 100%;
     /* height: 480px; */
     /* flex-grow: 2; */
 }
 .sec1-image{
-    width: 200px;
-    height: 200px;
-}
-/* section 2 */
-.home-sec2-card{
-    width: 450px;
-    height: 300px;
-}
-.home-sec2-image{
-    width: 380px;
-}
-.home-sec2-card-button{
-    width: 120px;
-    height: 35px;
-    box-shadow: var(--box-shadow);
-}
-.home-sec2-card-button:active {
-    /* box-shadow: 0 5px #666; */
-    transform: translateY(4px);
-    transform: translateY(4px);
-}
-.home-sec2-card-button:hover {
-    background-color: rgb(243, 252, 243);
+    width: 500px;
+    height: 400px;
 }
 /* section 3 */
 .home-sec3-left{

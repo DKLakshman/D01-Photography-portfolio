@@ -51,7 +51,10 @@ if (isset($_SESSION['email'])) { ?>
                     </ul>
 
                 </div>
-                <button class="nav-logout-button alg-bg-green alg-rounded-mid border-1 border-light alg-text-light alg-bold">Logout</button>
+                <a class="nav-link" href="logout.php">
+
+                    <button class="nav-logout-button alg-bg-green alg-rounded-mid border-1 border-light alg-text-light alg-bold">Logout</button>
+                </a>
             </div>
         </nav>
 

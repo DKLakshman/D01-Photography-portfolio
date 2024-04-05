@@ -54,7 +54,9 @@
                     </ul>
 
                 </div>
-                <button class="nav-logout-button alg-bg-green alg-rounded-mid border-1 border-light alg-text-light alg-bold">Logout</button>
+                <a class="nav-link" href="logout.php">
+                    <button class="nav-logout-button alg-bg-green alg-rounded-mid border-1 border-light alg-text-light alg-bold">Logout</button>
+                </a>
             </div>
         </nav>
 
@@ -72,7 +74,7 @@
 
 
 
-    <section class="pack-sec1 d-flex flex-column align-items-center">
+    <section class="pack-sec1 d-flex flex-column align-items-center pt-5">
         <div class="text-center alg-text-medium alg-bold alg-text-dark pb-5">See the World in a Different Frame</div>
         <div class="pack-sec1-img"></div>
         <div class="pack-sec1-para pt-5 pb-4">
