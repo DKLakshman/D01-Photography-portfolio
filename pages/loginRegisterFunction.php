@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $conn=new mysqli("localhost","root","","photography_portfolio");
     if($conn->connect_error){
         die("Connection error".$conn->connect_error);
@@ -31,7 +32,7 @@
             $query ="INSERT INTO profiles VALUES('','$email','$name','$address','$number','$password','$type')";
             mysqli_query($conn,$query);
             
-            echo "<script> alert('Registered Successfully'); document.location.href = 'ViewPhotos.php'; </script>";
+            echo "<script> alert('Registered Successfully'); document.location.href = 'login.php'; </script>";
         }else{
             echo "
             <script> alert('Password miss match'); </script>
@@ -53,7 +54,15 @@
     
         if ($result && mysqli_num_rows($result) > 0) {
             // Login successful
-            echo "<script> alert('Login successful'); document.location.href = 'ViewPhotos.php'; </script>";
+            $_SESSION['email'] = $email;
+            $_SESSION['type'] = $type;
+
+            if ($type=='admin') {
+                echo "<script> alert('Login successful'); document.location.href = 'ViewPhotos.php'; </script>";
+            }else{
+                echo "<script> alert('Login successful'); document.location.href = 'index.php'; </script>";
+
+            }
         } else {
             // Invalid login
             echo "<script> alert('Invalid login'); </script>";

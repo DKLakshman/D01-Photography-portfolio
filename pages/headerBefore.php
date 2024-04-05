@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg  alg-bg-green">
         <div class="container">
-            <a class="navbar-brand alg-bolder alg-text-light" href="#">forcus frame</a>
+            <a class="navbar-brand alg-bolder text-white" href="#">Malcolm Lismore Photography</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,8 +25,13 @@
 
             </div>
             <div class="d-flex gap-4">
-                <button class="nav-logout-button alg-bg-green alg-rounded-mid border-1 border-light alg-text-light alg-bold">Sign In</button>
-                <button class="nav-logout-button alg-bg-green alg-rounded-mid border-1 border-light alg-text-light alg-bold">Sign Up</button>
+                <a href="login.php">
+                    <button class="nav-logout-button alg-bg-green alg-rounded-mid border-1 border-light alg-text-light alg-bold">Sign In</button>
+                </a>
+                <a href="register.php">
+
+                    <button class="nav-logout-button alg-bg-green alg-rounded-mid border-1 border-light alg-text-light alg-bold">Sign Up</button>
+                </a>
             </div>
         </div>
     </nav>

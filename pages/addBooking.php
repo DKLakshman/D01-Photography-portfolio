@@ -23,7 +23,7 @@ function addbooking()
     $query = "INSERT INTO bookings VALUES('','$email','$name','$number','$package_name','$package_type','$location','$date')";
     mysqli_query($conn, $query);
 
-    echo "<script> alert('Booking place Successfully'); document.location.href = '../index.php'; </script>";
+    echo "<script> alert('Booking place Successfully'); document.location.href = 'index.php'; </script>";
 }
 ?>
 
@@ -43,84 +43,66 @@ function addbooking()
 </head>
 
 <body>
-    <?php require 'header.php'?>
-    <section class="pt-5">
+    <?php require 'header.php' ?>
+    <section class="pt-5 pb-5">
         <div class="container">
             <div class="alg-text-dark alg-text-medium text-center alg-bold pb-5">Ready to capture your special moments?</div>
-            <div class="d-flex">
+            <div class="d-flex justify-content-center">
                 <!-- left section -->
-                <div class="con-sec1-left">
+                <div class="con-sec1-left d-flex flex-column gap-3">
                     <!-- image section -->
                     <div>
                         <img class="con-sec1-image" src="../resources/contactUs/con1.png" alt="">
                     </div>
-                    <div>Book your event now and let's turn your visions into timeless memories. Don't let those fleeting moments slip away - secure your date and let's create something unforgettable together!</div>
+                    <div class="p-3  alg-text-dark">Book your event now and let's turn your visions into timeless memories. Don't let those fleeting moments slip away - secure your date and let's create something unforgettable together!</div>
                 </div>
                 <!-- right section -->
-                <div class="con-sec1-right">
-                    <form action="" method="POST" enctype="multipart/form-data">
-                        email :
-                        <input type="email" name="email" required><br>
+                <div class="con-sec1-right d-flex justify-content-center alg-shadow">
+                    <form class="p-3" method="POST" enctype="multipart/form-data">
+                        <div class=" alg-text-dark alg-bold">Email</div>
+                        <input class="con-input border-1" type="email" name="email" required>
 
-                        Name :
-                        <input type="name" name="name" required><br>
+                        <div class=" alg-text-dark alg-bold pt-3">Name</div>
+                        <input class="con-input border-1" type="name" name="name" required>
 
-                        Phone number :
-                        <input type="number" name="number" required><br>
+                        <div class=" alg-text-dark alg-bold pt-3">Phone number</div>
+                        <input class="con-input border-1" type="number" name="number" required>
 
-                        Package name :
-                        <select name="pname" id="">
+                        <div class=" alg-text-dark alg-bold pt-3">Package name</div>
+                        <select class="con-input border-1" name="pname" id="">
                             <option value="Brozne">Budget</option>
                             <option value="Gold">Medium</option>
                             <option value="Premium">Premium</option>
                         </select><br><br>
 
 
-                        Package Type :
-                        <select name="ptype" id="">
+                        <div class=" alg-text-dark alg-bold pt-3">Package Type</div>
+                        <select class="con-input border-1" name="ptype" id="">
                             <option value="Wild_Life">Wild Life</option>
                             <option value="Weddings">Weddings</option>
                             <option value="Pre_Shoots">Pre Shoots</option>
                             <option value="Events">Events</option>
-                        </select><br><br>
+                        </select>
 
-                        <label>Location :</label>
-                        <textarea name="location" id="" cols="30" rows="10" required></textarea><br><br>
+                        <div class=" alg-text-dark alg-bold pt-3">Location :</div>
+                        <textarea name="location" id="" cols="34" rows="4" required></textarea>
 
-                        Date :
-                        <input type="date" name="date" required><br>
-
-                        <button type="submit" name="submit" value="addBookings">Book</button>
+                        <div class="d-flex gap-4 pt-3">
+                            <div>
+                                <div class=" alg-text-dark alg-bold">Date</div>
+                                <input style="width: 150px;height: 30px;" class=" alg-shadow border-1" type="date" name="date" required>
+                            </div>
+                            <div class="h-100 d-flex align-items-center">
+                                <button class="con-btn" type="submit" name="submit" value="addBookings">Book</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <?php require 'footer.php' ?>
 </body>
 
 </html>
