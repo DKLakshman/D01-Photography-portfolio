@@ -20,16 +20,17 @@
             <div class="alg-text-p alg-text-light">
                 <h5>Conatct Us</h5>
                 <div class="">0094 72 8571 968</div>
-                <div>focusframe@sltnet.lk</div>
+                <div>malcolmlismore@sltnet.lk</div>
             </div>
             <div class="alg-text-p alg-text-light">
-                <div>Copyright © 2024 · Focus Frame</div>
+                <div>Copyright © 2024 · Malcolm Lismore Photography
+                </div>
             </div>
             <div class="d-flex alg-text-light">
-                <div style="width: 40px; font-size:25px;"><i  class="bi bi-facebook"></i></div>
-                <div style="width: 40px; font-size:25px;"><i  class="bi bi-instagram"></i></div>
-                <div style="width: 40px; font-size:25px;"><i  class="bi bi-whatsapp"></i></div>
-                <div style="width: 40px; font-size:25px;"><i  class="bi bi-twitter"></i></div>
+                <div style="width: 40px; font-size:25px;"><i class="bi bi-facebook"></i></div>
+                <div style="width: 40px; font-size:25px;"><i class="bi bi-instagram"></i></div>
+                <div style="width: 40px; font-size:25px;"><i class="bi bi-whatsapp"></i></div>
+                <div style="width: 40px; font-size:25px;"><i class="bi bi-twitter"></i></div>
             </div>
         </div>
     </section>
