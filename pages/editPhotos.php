@@ -1,6 +1,8 @@
 <?php
 require 'function.php';
+// get the id current photo that come with url
 $id = $_GET["id"];
+// select all deitails according the current id
 $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM photos WHERE id = $id"));
 
 ?>
@@ -11,7 +13,7 @@ $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM photos WHERE id = 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Update Photos</title>
 </head>
 
 <body>
@@ -25,16 +27,19 @@ $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM photos WHERE id = 
             <div class="addPhotos-form alg-bg-light-green rounded-2">
                 <form action="" method="POST" enctype="multipart/form-data">
                     <div class="input-labels alg-text-h3 alg-bold pt-3 alg-text-light">Title</div>
+                     <!-- fill database data as value for input fields -->
                     <input class="input-field" type="text" name="title" value="<?php echo $user['title']; ?>" required><br>
 
                     <div class="input-labels alg-text-h3 alg-bold pt-3 alg-text-light">Image </div>
                     <input class="" style="margin-left: 100px;" type="file" name="file" required><br><br>
 
                     <div class="input-labels alg-text-h3 alg-bold pt- alg-text-light">Description :</div>
+                     <!-- fill database data as value for input fields -->
                     <textarea class="input-textarea" name="description" id="" cols="30" rows="10"><?php echo $user['description']; ?></textarea><br><br>
 
                     <div class="input-labels alg-text-h3 alg-bold  alg-text-light">type</div>
                     <select class="input-field" name="type" id="" required>
+                         <!-- fill database data as value for input fields -->
                         <?php if ($user['type'] == 'Wild_Life') { ?>
                             <option value="Wild_Life">Wild Life</option>
                             <option value="Weddings">Weddings</option>

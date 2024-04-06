@@ -1,4 +1,5 @@
 <?php
+// start a session to create cookies
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }

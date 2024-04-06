@@ -1,4 +1,5 @@
 <?php
+// config connection with database
 $conn = new mysqli("localhost", "root", "", "photography_portfolio");
 if ($conn->connect_error) {
     die("Connection error" . $conn->connect_error);
@@ -8,6 +9,7 @@ if ($conn->connect_error) {
     }
 }
 
+// this is the delete function for delete bookings
 function delete()
 {
     global $conn;

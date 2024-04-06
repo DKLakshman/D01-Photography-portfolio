@@ -28,6 +28,7 @@
     <div class="container">
         <div class="row">
             <?php
+            // show images and data using a foreach loop.
             $users = mysqli_query($conn, "SELECT * FROM photos");
             foreach ($users as $user) :
             ?>

@@ -1,17 +1,20 @@
 <?php
+// connection establish
 $conn = new mysqli("localhost", "root", "", "photography_portfolio");
 if ($conn->connect_error) {
+    // error showing
     die("Connection error" . $conn->connect_error);
 } else {
+    // check submit is set and call addbooking function
     if (isset($_POST["submit"])) {
         addbooking();
     }
 }
-
+//addbooking function 
 function addbooking()
 {
     global $conn;
-
+//catch inputs values
     $email = $_POST["email"];
     $name = $_POST["name"];
     $number = $_POST["number"];
@@ -20,6 +23,7 @@ function addbooking()
     $location = $_POST["location"];
     $date = $_POST["date"];
 
+    //sql query ti insert above values 
     $query = "INSERT INTO bookings VALUES('','$email','$name','$number','$package_name','$package_type','$location','$date')";
     mysqli_query($conn, $query);
 
@@ -101,7 +105,8 @@ function addbooking()
             </div>
         </div>
     </section>
-
+    
+<!-- header section require -->
     <?php require 'footer.php' ?>
 </body>
 

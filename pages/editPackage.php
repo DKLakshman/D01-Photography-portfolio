@@ -1,6 +1,8 @@
 <?php
 require 'packageFunction.php';
+// get the id current package that come with url
 $id = $_GET["id"];
+// select all deitails according the current id
 $package = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM packages WHERE id = $id"));
 
 ?>
@@ -49,42 +51,46 @@ $package = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM packages WHERE 
                     </select><br><br>
 
                     <div class="input-labels alg-text-h3 alg-bold alg-text-light">Image Count</div>
+                    <!-- fill database data as value for input fields -->
                     <input class="input-field" type="text" name="imgCount" value="<?php echo $package['img_count']; ?>" required><br>
-
+                    
                     <div class="input-labels alg-text-h3 alg-bold pt-4 alg-text-light">Hours</div>
+                    <!-- fill database data as value for input fields -->
                     <input class="input-field" type="text" name="hours" value="<?php echo $package['hours']; ?>" required><br>
-
+                    
                     <div class="input-labels alg-text-h3 alg-bold pt-4 alg-text-light">Package Type</div>
+                    <!-- fill database data as value for input fields -->
                     <select class="input-field" name="type" id="">
                         <?php if ($package['package_type'] == 'Wild_Life') { ?>
                             <option value="Wild_Life">Wild Life</option>
                             <option value="Weddings">Weddings</option>
                             <option value="Pre_Shoots">Pre Shoots</option>
                             <option value="Events">Events</option>
-                        <?php } else if ($package['package_type'] == 'Weddings') { ?>
-                            <option value="Weddings">Weddings</option>
-                            <option value="Wild_Life">Wild Life</option>
-                            <option value="Pre_Shoots">Pre Shoots</option>
+                            <?php } else if ($package['package_type'] == 'Weddings') { ?>
+                                <option value="Weddings">Weddings</option>
+                                <option value="Wild_Life">Wild Life</option>
+                                <option value="Pre_Shoots">Pre Shoots</option>
                             <option value="Events">Events</option>
-                        <?php } else if ($package['package_type'] == 'Pre_Shoots') { ?>
-                            <option value="Pre_Shoots">Pre Shoots</option>
-                            <option value="Wild_Life">Wild Life</option>
-                            <option value="Weddings">Weddings</option>
-                            <option value="Events">Events</option>
-                        <?php } else { ?>
-                            <option value="Events">Events</option>
+                            <?php } else if ($package['package_type'] == 'Pre_Shoots') { ?>
                             <option value="Pre_Shoots">Pre Shoots</option>
                             <option value="Wild_Life">Wild Life</option>
                             <option value="Weddings">Weddings</option>
-                        <?php } ?>
-                    </select><br><br>
-
-                    <div class="input-labels alg-text-h3 alg-bold pt-4 alg-text-light">Package Price</div>
-                    <input class="input-field" type="text" name="price" value="<?php echo $package['price']; ?>" required><br>
-
-                    <div class="d-flex justify-content-center pt-4">
-                        <button class="addPhotos-btn alg-bg-dark-green alg-text-light alg-bold rounded-1 border-1 border-light" type="submit" name="submit" value="edit">edit</button>
-                    </div>
+                            <option value="Events">Events</option>
+                            <?php } else { ?>
+                                <option value="Events">Events</option>
+                                <option value="Pre_Shoots">Pre Shoots</option>
+                                <option value="Wild_Life">Wild Life</option>
+                                <option value="Weddings">Weddings</option>
+                                <?php } ?>
+                            </select><br><br>
+                            
+                            <div class="input-labels alg-text-h3 alg-bold pt-4 alg-text-light">Package Price</div>
+                            <!-- fill database data as value for input fields -->
+                            <input class="input-field" type="text" name="price" value="<?php echo $package['price']; ?>" required><br>
+                            
+                            <div class="d-flex justify-content-center pt-4">
+                                <button class="addPhotos-btn alg-bg-dark-green alg-text-light alg-bold rounded-1 border-1 border-light" type="submit" name="submit" value="edit">edit</button>
+                            </div>
                     <!-- <button type="submit" name="submit" value="edit">Edit</button> -->
 
                 </form>

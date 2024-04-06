@@ -11,7 +11,7 @@ if (session_status() == PHP_SESSION_NONE) {
     if(isset($_COOKIE[session_name()])){
         setcookie(session_name(), '', time()-3600, '/');
     }
-
+// if has a cookie then destroy it when call this function
     session_destroy();
 
     header("Location: index.php");
